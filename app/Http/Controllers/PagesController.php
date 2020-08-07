@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Repositories\Pages\PagesContract;
+use Sentinel;
+use App\Products;
 
 class PagesController extends Controller
 {
@@ -16,12 +18,14 @@ class PagesController extends Controller
     public function index()
     {
         //
-        return view('index');
+        $products = Products::all();
+        return view('index')->with('products', $products);
     }
     
     public function shop ()
     {
-        return view('shop');
+        $products = Products::all();
+        return view('shop')->with('products', $products);
     }
     public function shopDetails ()
     {
@@ -33,7 +37,8 @@ class PagesController extends Controller
     }
     public function shopGrid ()
     {
-        return view('shop-grid');
+        $products = Products::all();
+        return view('shop-grid')->with('products', $products);
     }
     public function shopingCart ()
     {

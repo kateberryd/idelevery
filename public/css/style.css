@@ -1708,7 +1708,7 @@ ol {
 }
 
 .product__details__text p {
-	margin-bottom: 45px;
+	margin-bottom: none;
 }
 
 .product__details__text .primary-btn {

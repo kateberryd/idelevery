@@ -203,17 +203,39 @@
 		Quantity change
 	--------------------- */
     var proQty = $('.pro-qty');
-    proQty.prepend('<span class="dec qtybtn">-</span>');
-    proQty.append('<span class="inc qtybtn">+</span>');
+    // proQty.prepend('');
+    // proQty.append('');
     proQty.on('click', '.qtybtn', function () {
         var $button = $(this);
         var oldValue = $button.parent().find('input').val();
+        var id = $button.parent().find('input').attr('data-id')
         if ($button.hasClass('inc')) {
             var newVal = parseFloat(oldValue) + 1;
+            axios.patch('/cart/' + id, {
+                quantity: newVal
+            })
+            .then(function(response){
+            //    window.location.href = " {{ route ('cart.index') }}"
+            console.log(response);
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+
+            
         } else {
             // Don't allow decrementing below zero
             if (oldValue > 0) {
                 var newVal = parseFloat(oldValue) - 1;
+                axios.patch('/cart/' + id, {
+                    quantity: newVal
+                })
+                .then(function(response){
+                    console.log(response)
+                })
+                .catch((error) => {
+                    console.log(error)
+                })
             } else {
                 newVal = 0;
             }

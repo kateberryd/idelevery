@@ -161,6 +161,9 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
+        Unicodeveloper\Paystack\PaystackServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -174,6 +177,19 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+ 		App\Providers\OrderProductServiceProvider::class,
+ 		App\Providers\OrderServiceProvider::class,
+ 		App\Providers\OrderServiceProvider::class,
+ 		App\Providers\PaymentServiceProvider::class,
+ 		App\Providers\CheckoutServiceProvider::class,
+ 		App\Providers\ShopingCartServiceProvider::class,
+ 		App\Providers\UserServiceProvider::class,
+ 		App\Providers\AdminServiceProvider::class,
+ 		App\Providers\AuthenticationServiceProvider::class,
+ 		App\Providers\Product_categoryServiceProvider::class,
+ 		App\Providers\OrdersServiceProvider::class,
+ 		App\Providers\ProductsServiceProvider::class,
+ 		App\Providers\VendorsServiceProvider::class,
  		App\Providers\PagesServiceProvider::class,
 
     ],
@@ -227,6 +243,13 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Activation' => Cartalyst\Sentinel\Laravel\Facades\Activation::class,
+        'Reminder'   => Cartalyst\Sentinel\Laravel\Facades\Reminder::class,
+        'Sentinel'   => Cartalyst\Sentinel\Laravel\Facades\Sentinel::class,
+        'Image' => Intervention\Image\Facades\Image::class,
+        'Paystack' => Unicodeveloper\Paystack\Facades\Paystack::class,
+        
+
 
     ],
 
