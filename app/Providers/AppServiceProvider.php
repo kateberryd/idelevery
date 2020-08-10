@@ -1,4 +1,5 @@
 <?php
+mysql://b51348163933ed:303327e5@us-cdbr-east-02.cleardb.com/heroku_5d7e39ad3e4c2f6?reconnect=true
 
 namespace App\Providers;
 

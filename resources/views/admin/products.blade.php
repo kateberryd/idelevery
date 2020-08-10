@@ -42,6 +42,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            @if($products->count() > 0)
                                             @foreach($products as $product)
                                             <tr>
                                                 <td></td>
@@ -58,7 +59,7 @@
                                                 </td>
                                             </tr>
                                             @endforeach
-                                        
+                                            @endif
                                         </tbody>
                                     </table>
                                 </div>

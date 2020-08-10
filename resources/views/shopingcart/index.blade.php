@@ -37,7 +37,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                           
+                           @if(cart::count() > 0)
                             @foreach(Cart::content() as $item)
                            
                                 <tr>
@@ -72,7 +72,7 @@
                                     </td>
                                 </tr>
                                 @endforeach
-                                
+                                @endif
                                 
                             </tbody>
                         </table>

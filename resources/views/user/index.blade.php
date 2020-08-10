@@ -57,6 +57,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            @if($users->count() > 0)
                                             @foreach($users as $user)
                                             <tr>
                                                 <td></td>
@@ -75,6 +76,7 @@
                                                 </td>
                                             </tr>
                                             @endforeach
+                                            @endif
                                             
                                         </tbody>
                                     </table>

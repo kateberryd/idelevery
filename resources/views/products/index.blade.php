@@ -33,9 +33,11 @@
                                                                 <div class="form-group">
                                                                     <select name="product_category" class="form-control">
                                                                         <option value="none" selected="" disabled="">Select Category</option>
+                                                                        @if($product_categories->count() > 0)
                                                                         @foreach($product_categories as $product_category)
 																		<option value="{{$product_category->name}}">{{$product_category->name}}</option>
                                                                         @endforeach
+                                                                        @endif
 																	</select>
                                                                 </div>
                                                                 <div class="form-group">

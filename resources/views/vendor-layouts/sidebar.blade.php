@@ -14,7 +14,7 @@
                         <!-- <li><a title="All Category" href="/admin/category"><span class="mini-sub-pro">Users</span></a></li>                          -->
                         <!-- <li><a title="All Category" href="/admin/category"><span class="mini-sub-pro">Add Category</span></a></li>    -->
                         <li><a title="All Category" href="/vendor/products"><span class="mini-sub-pro">Add Products</span></a></li>   
-                        <li><a title="All Category" href="/admin/category"><span class="mini-sub-pro">All Orders</span></a></li>                                                                     
+                        <!-- <li><a title="All Category" href="/admin/category"><span class="mini-sub-pro">All Orders</span></a></li>                                                                      -->
                         <li><a title="Add Professor" href="add-professor.html"><span class="mini-sub-pro">Add vendors</span></a></li>
                         <!-- <li><a title="All Category" href="/admin/category"><span class="mini-sub-pro">All Contacts</span></a></li>                          -->
 
